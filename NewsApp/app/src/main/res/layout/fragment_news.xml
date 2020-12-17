@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".NewsFragment">
-    <TextView
-        android:id="@+id/news"
-        android:layout_width="wrap_content"
+    tools:context=".NewsFragment" android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TopBars"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="14sp" />
+        app:tabIndicatorColor="#99ffffff"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Newsrecyclerview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
 
-</RelativeLayout>
+
+</LinearLayout>

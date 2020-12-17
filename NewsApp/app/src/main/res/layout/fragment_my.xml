@@ -1,14 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:orientation="vertical"
+    android:layout_marginTop="50dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyFragment">
-    <TextView
-        android:id="@+id/my"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="14sp" />
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/my_image"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:text="头像"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="70dp"
+            android:layout_weight="2"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+        <TextView
+            android:text="用户名"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="70dp" />
+        <TextView
+            android:id="@+id/info_name"
+            android:textSize="18dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/collection_image"
+            android:id="@+id/info_collection"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        </LinearLayout>
+        <TextView
+            android:text="收藏"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/history_image"
+            android:id="@+id/info_history"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        </LinearLayout>
+        <TextView
+            android:text="设置"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+        <ImageView
+            android:src="@drawable/my_setting"
+            android:id="@+id/info_setting"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="设置"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

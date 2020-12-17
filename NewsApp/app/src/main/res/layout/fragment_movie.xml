@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieFragment">
-    <TextView
-        android:id="@+id/movie"
-        android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".moviespage.MovieFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecyclerview"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="14sp" />
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

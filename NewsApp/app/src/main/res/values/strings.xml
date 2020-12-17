@@ -7,4 +7,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="login_edit_digits">0123456789qwertyuiopasdfghjklzxcvbnm_</string>
+    <string name="account_hint_text">请输入账号</string>
+    <string name="password_hint_text">请输入密码</string>
+    <string name="login_button_text">登录</string>
+    <string name="register_button_text">注册</string>
+    <string name="password_input_error_tip">请确认您输入的密码是否正确</string>
+    <string name="user_unregister_tip">该用户还未注册</string>
+    <string name="password_is_empty_tip">密码不能为空</string>
+    <string name="account_is_empty_tip">账号不能为空</string>
+    <string name="register_success_text_tip">注册成功</string>
+    <string name="account_exist_text_tip">该账号已存在，请重新输入</string>
+    <string name="dialog_tip_text">提示</string>
+    <string name="login_dialog_message_text">该账号还未注册，是否跳转到注册页面进行注册？</string>
+    <string name="confirm_text">确定</string>
+    <string name="cancle_text">取消</string>
 </resources>

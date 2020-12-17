@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie_city_name"
+    android:orientation="horizontal"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:background="@drawable/movie_city_style"
+    android:text="default"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="15dp">
+
+
+
+</TextView>
